@@ -10,7 +10,7 @@ const UseEffectBasics = () => {
     if (value >= 1) {
       document.title = `New Message(${value})`;
     }
-  });
+  }, []);
 
   console.log("render component");
 
