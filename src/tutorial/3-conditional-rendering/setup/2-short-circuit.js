@@ -9,8 +9,8 @@ const ShortCircuit = () => {
 
   return (
     <>
-      <h1>{firstValue}</h1>
-      <h2>value: {secondValue}</h2>
+      <h1>{text || "john doe"}</h1>
+      {text && <h1>hello world</h1>}
     </>
   );
 };
