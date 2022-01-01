@@ -10,7 +10,6 @@ const MultipleReturns = () => {
       .then((resp) => resp.json())
       .then((user) => {
         const { login } = user;
-        console.log(user);
         setUser(login);
         setIsLoading(false);
       })
@@ -33,7 +32,11 @@ const MultipleReturns = () => {
     );
   }
 
-  return <h2>multiple returns</h2>;
+  return (
+    <div>
+      <h1>{user}</h1>
+    </div>
+  );
 };
 
 export default MultipleReturns;
