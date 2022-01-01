@@ -7,6 +7,7 @@ const ShortCircuit = () => {
   const firstValue = text || "hello world";
   const secondValue = text && "hello world";
 
+  //
   return (
     <>
       <h1>{text || "john doe"}</h1>
